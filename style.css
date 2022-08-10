@@ -1,0 +1,243 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+
+
+:root
+{
+   height: 100%;
+   --secondary-color:white;
+   --primary-color:black; 
+   --relative-position:relative;
+   --absolute-position:absolute;
+   --center-alignment:center;
+   --pointer-cursor:pointer;
+   --flex-display:flex;
+   --auto:auto;
+   
+
+}
+
+.light-theme
+{
+    --secondary-color:black;
+    --primary-color:white; 
+    
+}
+
+body
+{
+    height: 100%;
+    position:var( --relative-position);
+    background-color:var(--primary-color);
+
+}
+
+body #icon
+{
+    width: 2.5em;
+    margin: 3em;
+    cursor: var(--pointer-cursor);
+    float: right;
+}
+
+.main-container
+{
+    height: var(--auto);
+    width: 20em;
+    background-color: var(--primary-color);
+    position:var(--absolute-position);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.main-container .time-container
+{
+    height: 35vh;
+    width: 20em;
+    background-color:var(--secondary-color);
+    margin: var(--auto);
+    clip-path: circle(43.9% at 50% 50%);
+
+}
+
+.main-container .time-container div
+{
+    height: 100%;
+    width: 100%;
+    background-color:var(--primary-color);
+    margin: var(--auto);
+    clip-path: circle(39.9% at 50% 50%);
+    position: var( --relative-position);
+
+}
+
+.main-container .time-container div p 
+{
+
+    text-align: var(--center-alignment);
+    color: var(--secondary-color);
+    position:var(--absolute-position);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: var(--flex-display);
+    align-items: var(--center-alignment);
+    justify-content:space-between;
+    width:70%;
+    cursor: context-menu;
+}
+
+#hours,#minutes,#seconds
+{
+    width: 2ch;
+    text-align: center;
+}
+
+
+.main-container .time-container div p #hours,#hourPointes
+{
+    font-size: 4em;
+
+
+
+}
+
+.main-container .time-container div p #minutes,#minutePointes
+{
+    font-size: 3em;
+
+ 
+
+}
+
+.main-container .time-container div p #seconds
+{
+    font-size: 2em;
+
+}
+
+
+
+
+.main-container .play-button-container
+{
+    height: 10vh;
+    width: 8em;
+    background-color:var(--secondary-color);
+    margin-left: 35%;
+    clip-path: circle(28.0% at 50% 50%);
+}
+
+.main-container .play-button-container #play-button
+{
+    height: 100%;
+    width: 100%;
+    background-color:var(--primary-color);
+    color: var(--secondary-color);
+    font-size: 1em;
+    margin: var(--auto);
+    clip-path: circle(25.8% at 50% 50%);
+    cursor: var(--pointer-cursor);
+}
+
+.main-container .three-buttons-container
+{
+    width: 80%;
+    height: 10vh;
+    display: var(--flex-display);
+    justify-content: space-between;
+    align-items: var(--center-alignment);
+    margin: var(--auto);
+    display: none;
+
+}
+
+.main-container .three-buttons-container span
+{
+   height: 80%;
+   width: 2em;
+   font-size: 3em;
+   position: var( --relative-position);
+   clip-path: circle(31.0% at 50% 50%);
+   background-color:var(--secondary-color);
+  
+}
+
+.main-container .three-buttons-container span button
+{
+   position: var(--absolute-position);
+   top: 50%;
+   left:50%;
+   transform: translate(-50%,-50%);
+   width: 100%;
+   height: 100%;
+   clip-path: circle(28.8% at 50% 50%);
+   background-color:var(--primary-color);
+   color: var(--secondary-color);
+   cursor: var(--pointer-cursor);
+   
+}
+
+
+.main-container #time-records
+{
+    display: var(--flex-display);
+    flex-direction: column;
+    justify-content: var(--center-alignment);
+    align-items: var(--center-alignment);
+}
+
+.main-container #time-records div 
+{
+    color: var(--secondary-color);
+    height: 3.125em;
+    width: 70%;
+    border: solid 1px var(--secondary-color);
+    border-radius: 1.5625em;
+    margin-top: 1em;
+    display: var(--flex-display);
+    justify-content: var(--center-alignment);
+    align-items: var(--center-alignment);
+}
+
+.main-container #time-records div i
+{
+    margin-right: 1em;
+    cursor: var(--pointer-cursor);
+    color: var(--secondary-color);
+}
+
+.main-container #time-records div p
+{
+    color: var(--secondary-color);
+    cursor: context-menu;
+}
+
+.main-container #clearAll-button-container
+{
+    width: 100%;
+    height: 8vh;
+    position: var( --relative-position);
+    display: none;
+}
+
+
+.main-container #clearAll-button-container #clearAll-button
+{
+    position: var(--absolute-position);
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    height: 70%;
+    width: 50%;
+    border-radius: 50px;
+    cursor: var(--pointer-cursor);
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+
+}
+

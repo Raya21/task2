@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link  rel="stylesheet" href="style.css">
+    <title>Timer</title>
+</head>
+<body>
+
+    <!--------------------------------------------Light theme icon---------------------------------------------------->
+    
+    <img src="images/sun.png" alt="sun icon" id="icon">
+
+    <!--------------------------------------------Main container------------------------------------------------------>
+
+    <div class="main-container">
+
+    <!---------------------------------------------------Time container------------------------------------------------>
+
+       <div class="time-container" id="time-container">
+         <div>
+            <p id="time">
+                <span id="hours"> 0 </span>
+                <span id="hourPointes">:</span>
+                <span id="minutes"> 0 </span>
+                <span id="minutePointes">:</span>
+                <span id="seconds"> 0 </span>
+            </p>
+         </div>
+       </div>
+    
+    <!-----------------------------------------------------Play button---------------------------------------------------->  
+
+       <div class="play-button-container" id="play-button-container">
+        <button id="play-button">
+            Play
+        </button>
+     </div>
+
+     <!-------------------------------------------Three buttons (Reset,Pause,Lap)--------------------------------------->
+
+     <div class="three-buttons-container" id="three-buttons-container">
+        <span><button id="reset-button">Reset</button></span>
+        <span><button id="pause-button">Pause</button></span>
+        <span><button id="lap-button">Lap</button></span>
+     </div>
+
+     <!---------------------------------------------Time Records--------------------------------------------------------->
+
+    <div id="time-records"></div>
+
+    <!---------------------------------------------------Clear All Button------------------------------------------------->
+
+    <div id="clearAll-button-container">
+        <button id="clearAll-button">Clear All</button>
+    </div>
+    
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
